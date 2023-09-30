@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+.showcase{
+    /* position: relative; */
+    background-image:url(pic\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(90%);
+}
+.logo{
+    width: 300px;
+}
+.showcase::after{
+    content: "";
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+.showcase-top{
+    position: relative;
+    z-index: 4;
+    height: 90px;
+    top: 5%;
+}
+.showcase-top img{
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    z-index: 6;
+    transform: translate(-50%,-50%);
+}
+.showcase-top .b1{
+    position: absolute;
+    align-items: center;
+    background-color: red;
+    padding: 8px 20px;
+    color: aliceblue;
+    border: 0;
+    font-size: 25px;
+    right: 4%;
+    border-radius: 10px;
+    top: 13px;
+    cursor: pointer;
+}
+.showcase-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 15%;
+}
+ .b2{
+    background-color: red;
+    color: aliceblue;
+    border: 0;
+    padding: 20px 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+ .showcase-content h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+.showcase-content p{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+footer .f1{
+display: flex;
+text-decoration: none;
+justify-content: space-around;
+margin: 10px;
+width: 100%;
+}
+.f1 ul li, a{
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    list-style: none;
+}
